@@ -15,7 +15,7 @@ CREATE TABLE Registrations (
     RegistrationID INT PRIMARY KEY IDENTITY(1, 1),
     EventID INT REFERENCES Events(EventID), -- FK
     AttendeeFirstName VARCHAR(50) NOT NULL,
-		AttendeeLastName VARCHAR(50) NOT NULL,
+    AttendeeLastName VARCHAR(50) NOT NULL,
     Email VARCHAR(50) NOT NULL,
     RegistrationDate DATETIME NOT NULL,
 );
